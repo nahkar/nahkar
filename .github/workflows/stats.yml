@@ -31,5 +31,7 @@ jobs:
           git add assets/stats
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh stats cards"
+            # The Medium workflow may have committed in the meantime.
+            git pull --rebase
             git push
           fi
