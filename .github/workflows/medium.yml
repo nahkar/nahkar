@@ -18,7 +18,7 @@ jobs:
         with:
           feed_list: "https://medium.com/feed/@dimabelenov"
           max_post_count: 6
-          template: "- **[$title]($url)** · <sub>$date</sub>$newline"
+          template: "$newline- **[$title]($url)** · <sub>$date</sub>"
           date_format: "mmm d, yyyy"
           commit_message: "chore: pull the latest Medium posts"
           committer_username: "github-actions[bot]"
