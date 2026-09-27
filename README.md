@@ -152,7 +152,7 @@
 <table>
   <tr>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/nahkar/react-native-full-swipe"><img src="https://raw.githubusercontent.com/nahkar/react-native-full-swipe/main/media/undo.gif" width="240" alt="Full Swipe: delete + undo" /></a>
+      <a href="https://github.com/nahkar/react-native-full-swipe"><img src="assets/packages/full-swipe.gif" width="240" alt="Full Swipe: delete + undo" /></a>
       <h3><a href="https://github.com/nahkar/react-native-full-swipe">Full Swipe</a></h3>
       <p><b>One swipe. Any action, on either side.</b><br />Full-swipe rows for React Native: delete, archive or mark as read past a threshold you can feel, with an undo bar for the swipe you didn't mean.</p>
       <a href="https://www.npmjs.com/package/react-native-full-swipe"><img src="https://img.shields.io/npm/v/react-native-full-swipe?style=flat-square&label=npm&color=9361ff&labelColor=140a2b" alt="npm" /></a>
@@ -160,7 +160,7 @@
       <br /><sub>Reanimated · Gesture Handler · Expo</sub>
     </td>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/nahkar/react-native-wheel-kit"><img src="https://raw.githubusercontent.com/nahkar/react-native-wheel-kit/main/media/wheel.gif" width="240" alt="Wheel Kit: WheelPicker" /></a>
+      <a href="https://github.com/nahkar/react-native-wheel-kit"><img src="assets/packages/wheel-kit.gif" width="240" alt="Wheel Kit: WheelPicker" /></a>
       <h3><a href="https://github.com/nahkar/react-native-wheel-kit">Wheel Kit</a></h3>
       <p><b>Wheel pickers that feel the same on iOS and Android.</b><br />A snapping WheelPicker plus TimePicker and DatePicker: a haptic tick per row, virtualised for long lists, any locale.</p>
       <a href="https://www.npmjs.com/package/react-native-wheel-kit"><img src="https://img.shields.io/npm/v/react-native-wheel-kit?style=flat-square&label=npm&color=9361ff&labelColor=140a2b" alt="npm" /></a>
@@ -170,7 +170,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/nahkar/react-native-liquid-fill"><img src="https://raw.githubusercontent.com/nahkar/react-native-liquid-fill/main/media/ring.gif" width="240" alt="Liquid Fill: water in a ring, tilting with the phone" /></a>
+      <a href="https://github.com/nahkar/react-native-liquid-fill"><img src="assets/packages/liquid-fill.gif" width="240" alt="Liquid Fill: water in a ring, tilting with the phone" /></a>
       <h3><a href="https://github.com/nahkar/react-native-liquid-fill">Liquid Fill</a></h3>
       <p><b>Progress that sloshes when you tilt the phone.</b><br />Water that fills any shape — circle, card, bottle, any SVG path — with travelling waves, rising bubbles and a surface that stays level.</p>
       <a href="https://www.npmjs.com/package/react-native-liquid-fill"><img src="https://img.shields.io/npm/v/react-native-liquid-fill?style=flat-square&label=npm&color=9361ff&labelColor=140a2b" alt="npm" /></a>
@@ -178,7 +178,7 @@
       <br /><sub>Reanimated worklets · react-native-svg · Expo</sub>
     </td>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/nahkar/swipe-row"><img src="https://raw.githubusercontent.com/nahkar/swipe-row/main/media/buttons.gif" width="240" alt="Swipe Row: a short swipe opens buttons, a long one deletes" /></a>
+      <a href="https://github.com/nahkar/swipe-row"><img src="assets/packages/swipe-row.gif" width="240" alt="Swipe Row: a short swipe opens buttons, a long one deletes" /></a>
       <h3><a href="https://github.com/nahkar/swipe-row">Swipe Row</a></h3>
       <p><b>Swipeable rows for React on the web.</b><br />Reveal buttons like iOS Mail or full-swipe like Telegram and Gmail — or both in one row. Keyboard and screen-reader friendly, ~5 kB.</p>
       <a href="https://www.npmjs.com/package/swipe-row"><img src="https://img.shields.io/npm/v/swipe-row?style=flat-square&label=npm&color=9361ff&labelColor=140a2b" alt="npm" /></a>
