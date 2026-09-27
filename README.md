@@ -297,7 +297,7 @@
 <img src="assets/banners/stats.jpg" width="100%" alt="Flight log — GitHub activity, updated daily" />
 
 <p align="center">
-  <img src="assets/stats/overview.svg" width="100%" alt="GitHub stats and top languages" />
+  <img src="assets/stats/overview.svg" width="100%" alt="GitHub stats" />
 </p>
 <p align="center">
   <img src="assets/stats/activity.svg" width="100%" alt="Contributions per week over the last year" />

@@ -5,7 +5,7 @@
  *
  * The public github-readme-stats instances are rate-limited or down more
  * often than not, so the profile draws its own:
- *   assets/stats/overview.svg — the numbers and the top languages
+ *   assets/stats/overview.svg — the numbers
  *   assets/stats/activity.svg — contributions per week over the last year
  *
  * Local run: GITHUB_TOKEN=$(gh auth token) node scripts/stats.mjs
@@ -29,8 +29,6 @@ const C = {
   lilac: "#ceb7ff",
   violet: "#9361ff",
 };
-/** Language bar: the site's purples, then the planet's blues. */
-const LANG_COLORS = ["#b377ff", "#9361ff", "#ceb7ff", "#6d3bff", "#54aaff", "#8be0ff"];
 
 async function gql(query, variables) {
   const res = await fetch("https://api.github.com/graphql", {
@@ -50,12 +48,7 @@ const { user } = await gql(
       pullRequests { totalCount }
       repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
         totalCount
-        nodes {
-          stargazerCount
-          languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
-            edges { size node { name } }
-          }
-        }
+        nodes { stargazerCount }
       }
       contributionsCollection {
         totalCommitContributions
@@ -73,20 +66,6 @@ const { user } = await gql(
 const repos = user.repositories.nodes;
 const stars = repos.reduce((sum, r) => sum + r.stargazerCount, 0);
 const cal = user.contributionsCollection.contributionCalendar;
-
-const bytes = new Map();
-for (const r of repos)
-  for (const e of r.languages.edges)
-    bytes.set(e.node.name, (bytes.get(e.node.name) ?? 0) + e.size);
-// Notebook output and generated platform code swamp the byte count
-// without saying much about what gets written by hand.
-for (const skip of ["Jupyter Notebook", "C++", "CMake", "Swift", "Objective-C", "Kotlin", "Ruby", "Makefile", "Batchfile"])
-  bytes.delete(skip);
-const total = [...bytes.values()].reduce((a, b) => a + b, 0) || 1;
-const langs = [...bytes.entries()]
-  .sort((a, b) => b[1] - a[1])
-  .slice(0, 6)
-  .map(([name, size], i) => ({ name, share: size / total, color: LANG_COLORS[i] }));
 
 /** Bebas Neue (OFL) embedded, because an SVG shown through <img> cannot
  *  load web fonts. */
@@ -132,7 +111,7 @@ const fmt = (n) => n.toLocaleString("en-US");
 
 function overview() {
   const W = 840;
-  const H = 300;
+  const H = 250;
   const numbers = [
     ["contributions / year", cal.totalContributions],
     ["commits / year", user.contributionsCollection.totalCommitContributions],
@@ -143,44 +122,17 @@ function overview() {
   ];
   const cells = numbers
     .map(([label, value], i) => {
-      const x = [40, 190, 305][i % 3];
-      const y = 128 + Math.floor(i / 3) * 86;
+      const x = 40 + (i % 3) * 270;
+      const y = 120 + Math.floor(i / 3) * 80;
       return `<text x="${x}" y="${y}" class="h" font-size="46" fill="${C.lilac}" filter="url(#glow)">${fmt(value)}</text>
 <text x="${x}" y="${y + 24}" class="h" font-size="17" fill="#fff" fill-opacity=".7">${label}</text>`;
-    })
-    .join("");
-
-  const barX = 460;
-  const barW = 340;
-  let cursor = barX;
-  const segments = langs
-    .map((l) => {
-      const w = Math.max(3, l.share * barW);
-      const seg = `<rect x="${cursor.toFixed(1)}" y="92" width="${w.toFixed(1)}" height="12" fill="${l.color}"/>`;
-      cursor += w;
-      return seg;
-    })
-    .join("");
-  const legend = langs
-    .map((l, i) => {
-      const x = barX + (i % 2) * 180;
-      const y = 150 + Math.floor(i / 2) * 42;
-      return `<circle cx="${x + 6}" cy="${y - 6}" r="6" fill="${l.color}" filter="url(#glow)"/>
-<text x="${x + 20}" y="${y}" class="h" font-size="20" fill="#fff">${l.name}</text>
-<text x="${x + 160}" y="${y}" class="h" font-size="20" fill="${C.lilac}" text-anchor="end">${(l.share * 100).toFixed(1)}%</text>`;
     })
     .join("");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub stats for ${LOGIN}">
 ${defs}${panel(W, H)}
 ${title(40, 58, "mission stats")}
-${title(barX, 58, "top languages")}
-<line x1="438" y1="40" x2="438" y2="${H - 40}" stroke="${C.lilac}" stroke-opacity=".25"/>
 ${cells}
-<clipPath id="bar"><rect x="${barX}" y="92" width="${barW}" height="12" rx="6"/></clipPath>
-<rect x="${barX}" y="92" width="${barW}" height="12" rx="6" fill="${C.voidSoft}"/>
-<g clip-path="url(#bar)" filter="url(#glow)">${segments}</g>
-${legend}
 </svg>`;
 }
 
@@ -241,4 +193,4 @@ ${months.join("")}
 mkdirSync(out, { recursive: true });
 writeFileSync(join(out, "overview.svg"), overview());
 writeFileSync(join(out, "activity.svg"), activity());
-console.log(`✓ stats for ${LOGIN}: ${cal.totalContributions} contributions, ${stars} stars, ${langs.map((l) => l.name).join(", ")}`);
+console.log(`✓ stats for ${LOGIN}: ${cal.totalContributions} contributions, ${stars} stars`);
