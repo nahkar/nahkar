@@ -18,28 +18,28 @@
 <rect x="6.5" y="6.5" width="827" height="287" rx="18" fill="none" stroke="#ceb7ff" stroke-opacity=".8"/>
 <text x="40" y="58" class="h" font-size="26" fill="#fff" filter="url(#glow)">mission stats</text>
 <text x="460" y="58" class="h" font-size="26" fill="#fff" filter="url(#glow)">top languages</text>
-<line x1="420" y1="40" x2="420" y2="260" stroke="#ceb7ff" stroke-opacity=".25"/>
-<text x="40" y="128" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">2,168</text>
-<text x="40" y="152" class="h" font-size="17" fill="#fff" fill-opacity=".7">contributions / year</text><text x="190" y="128" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">79</text>
-<text x="190" y="152" class="h" font-size="17" fill="#fff" fill-opacity=".7">commits / year</text><text x="305" y="128" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">117</text>
-<text x="305" y="152" class="h" font-size="17" fill="#fff" fill-opacity=".7">pull requests</text><text x="40" y="214" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">42</text>
+<line x1="438" y1="40" x2="438" y2="260" stroke="#ceb7ff" stroke-opacity=".25"/>
+<text x="40" y="128" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">2,171</text>
+<text x="40" y="152" class="h" font-size="17" fill="#fff" fill-opacity=".7">contributions / year</text><text x="190" y="128" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">81</text>
+<text x="190" y="152" class="h" font-size="17" fill="#fff" fill-opacity=".7">commits / year</text><text x="305" y="128" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">9</text>
+<text x="305" y="152" class="h" font-size="17" fill="#fff" fill-opacity=".7">pull requests</text><text x="40" y="214" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">43</text>
 <text x="40" y="238" class="h" font-size="17" fill="#fff" fill-opacity=".7">public repos</text><text x="190" y="214" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">5</text>
 <text x="190" y="238" class="h" font-size="17" fill="#fff" fill-opacity=".7">stars earned</text><text x="305" y="214" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">13</text>
 <text x="305" y="238" class="h" font-size="17" fill="#fff" fill-opacity=".7">years shipping</text>
 <clipPath id="bar"><rect x="460" y="92" width="340" height="12" rx="6"/></clipPath>
 <rect x="460" y="92" width="340" height="12" rx="6" fill="#140a2b"/>
-<g clip-path="url(#bar)" filter="url(#glow)"><rect x="460.0" y="92" width="208.3" height="12" fill="#b377ff"/><rect x="668.3" y="92" width="106.9" height="12" fill="#9361ff"/><rect x="775.2" y="92" width="9.1" height="12" fill="#ceb7ff"/><rect x="784.2" y="92" width="6.3" height="12" fill="#6d3bff"/><rect x="790.6" y="92" width="3.6" height="12" fill="#54aaff"/><rect x="794.2" y="92" width="3.3" height="12" fill="#8be0ff"/></g>
+<g clip-path="url(#bar)" filter="url(#glow)"><rect x="460.0" y="92" width="206.1" height="12" fill="#b377ff"/><rect x="666.1" y="92" width="109.4" height="12" fill="#9361ff"/><rect x="775.4" y="92" width="9.0" height="12" fill="#ceb7ff"/><rect x="784.4" y="92" width="6.3" height="12" fill="#6d3bff"/><rect x="790.7" y="92" width="3.6" height="12" fill="#54aaff"/><rect x="794.2" y="92" width="3.3" height="12" fill="#8be0ff"/></g>
 <circle cx="466" cy="144" r="6" fill="#b377ff" filter="url(#glow)"/>
 <text x="480" y="150" class="h" font-size="20" fill="#fff">TypeScript</text>
-<text x="620" y="150" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">61.3%</text><circle cx="646" cy="144" r="6" fill="#9361ff" filter="url(#glow)"/>
+<text x="620" y="150" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">60.6%</text><circle cx="646" cy="144" r="6" fill="#9361ff" filter="url(#glow)"/>
 <text x="660" y="150" class="h" font-size="20" fill="#fff">JavaScript</text>
-<text x="800" y="150" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">31.4%</text><circle cx="466" cy="186" r="6" fill="#ceb7ff" filter="url(#glow)"/>
+<text x="800" y="150" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">32.2%</text><circle cx="466" cy="186" r="6" fill="#ceb7ff" filter="url(#glow)"/>
 <text x="480" y="192" class="h" font-size="20" fill="#fff">HTML</text>
-<text x="620" y="192" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">2.7%</text><circle cx="646" cy="186" r="6" fill="#6d3bff" filter="url(#glow)"/>
+<text x="620" y="192" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">2.6%</text><circle cx="646" cy="186" r="6" fill="#6d3bff" filter="url(#glow)"/>
 <text x="660" y="192" class="h" font-size="20" fill="#fff">CSS</text>
-<text x="800" y="192" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">1.9%</text><circle cx="466" cy="228" r="6" fill="#54aaff" filter="url(#glow)"/>
+<text x="800" y="192" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">1.8%</text><circle cx="466" cy="228" r="6" fill="#54aaff" filter="url(#glow)"/>
 <text x="480" y="234" class="h" font-size="20" fill="#fff">Dart</text>
-<text x="620" y="234" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">1.1%</text><circle cx="646" cy="228" r="6" fill="#8be0ff" filter="url(#glow)"/>
+<text x="620" y="234" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">1.0%</text><circle cx="646" cy="228" r="6" fill="#8be0ff" filter="url(#glow)"/>
 <text x="660" y="234" class="h" font-size="20" fill="#fff">Go</text>
 <text x="800" y="234" class="h" font-size="20" fill="#ceb7ff" text-anchor="end">1.0%</text>
 </svg>
