@@ -1,0 +1,25 @@
+name: Medium
+
+on:
+  schedule:
+    - cron: "5 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Rewrites the list between the BLOG-POST-LIST markers in README.md.
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://medium.com/feed/@dimabelenov"
+          max_post_count: 6
+          template: "- **[$title]($url)** · <sub>$date</sub>$newline"
+          date_format: "mmm d, yyyy"
+          commit_message: "chore: pull the latest Medium posts"
+          committer_username: "github-actions[bot]"
+          committer_email: "41898282+github-actions[bot]@users.noreply.github.com"
