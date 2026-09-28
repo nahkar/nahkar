@@ -284,6 +284,7 @@
 <a href="https://medium.com/@dimabelenov"><img src="assets/banners/writing.jpg" width="100%" alt="My writing — notes on building software" /></a>
 
 <!-- BLOG-POST-LIST:START -->
+- **[Building a Liquid Progress Bar in React Native That Sloshes When You Tilt the Phone](https://medium.com/@dimabelenov/react-native-liquid-progress-bar-accelerometer-0dad3998b473?source=rss-e3ff5526457e------2)** · <sub>Sep 27, 2026</sub>
 - **[FSD is easy to start and hard to keep](https://medium.com/@dimabelenov/fsd-is-easy-to-start-and-hard-to-keep-fe9a4de8f5ca?source=rss-e3ff5526457e------2)** · <sub>Jul 20, 2026</sub>
 - **[Pattern Mapper in JavaScript](https://medium.com/@dimabelenov/pattern-mapper-in-javascript-12bafa650495?source=rss-e3ff5526457e------2)** · <sub>Feb 24, 2023</sub>
 - **[How global TypeScript utilities work under the hood — Readonly&lt;Type&gt;](https://medium.com/@dimabelenov/how-global-typescript-utilities-work-under-the-hood-readonly-type-244230b6c725?source=rss-e3ff5526457e------2)** · <sub>Jan 24, 2022</sub>
