@@ -17,7 +17,7 @@
 <rect x="6" y="6" width="828" height="238" rx="18" fill="none" stroke="#b377ff" stroke-opacity=".55" stroke-width="3" filter="url(#bloom)"/>
 <rect x="6.5" y="6.5" width="827" height="237" rx="18" fill="none" stroke="#ceb7ff" stroke-opacity=".8"/>
 <text x="40" y="58" class="h" font-size="26" fill="#fff" filter="url(#glow)">mission stats</text>
-<text x="40" y="120" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">2,220</text>
+<text x="40" y="120" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">2,249</text>
 <text x="40" y="144" class="h" font-size="17" fill="#fff" fill-opacity=".7">contributions / year</text><text x="310" y="120" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">86</text>
 <text x="310" y="144" class="h" font-size="17" fill="#fff" fill-opacity=".7">commits / year</text><text x="580" y="120" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">9</text>
 <text x="580" y="144" class="h" font-size="17" fill="#fff" fill-opacity=".7">pull requests</text><text x="40" y="200" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">43</text>
