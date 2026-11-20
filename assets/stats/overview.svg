@@ -21,7 +21,7 @@
 <text x="40" y="144" class="h" font-size="17" fill="#fff" fill-opacity=".7">contributions / year</text><text x="310" y="120" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">86</text>
 <text x="310" y="144" class="h" font-size="17" fill="#fff" fill-opacity=".7">commits / year</text><text x="580" y="120" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">9</text>
 <text x="580" y="144" class="h" font-size="17" fill="#fff" fill-opacity=".7">pull requests</text><text x="40" y="200" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">43</text>
-<text x="40" y="224" class="h" font-size="17" fill="#fff" fill-opacity=".7">public repos</text><text x="310" y="200" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">8</text>
+<text x="40" y="224" class="h" font-size="17" fill="#fff" fill-opacity=".7">public repos</text><text x="310" y="200" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">11</text>
 <text x="310" y="224" class="h" font-size="17" fill="#fff" fill-opacity=".7">stars earned</text><text x="580" y="200" class="h" font-size="46" fill="#ceb7ff" filter="url(#glow)">13</text>
 <text x="580" y="224" class="h" font-size="17" fill="#fff" fill-opacity=".7">years shipping</text>
 </svg>
